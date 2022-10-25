@@ -1,0 +1,16 @@
+First, consider the fact that a program runs faster as the number of threads increases.
+The number of threads does not, however, directly correlate with the execution time. 
+
+Comparing number of threads:
+1 thread: 4.248s
+2 threads: 2.978s   (increase in 1.426 times)
+4 threads: 1.865s   (increase in 1.597 times)
+10 threads: 0.826s  (increase in 2.257 times)
+100 threads: 0.697s (increase in 1.252 times)
+
+We can see that until we increase number of cores and execution time dicreases in about 1.5 times if we double amount of cores up to
+the moment when amount of threads exceedes amount of cores on my machine (6 cores with virtual core each, about 12 in total).
+It is not twice since there is some time required to switch between threads.
+
+Therefore, it implies that threads are not executed entirely in parallel and that they may also interfere with one another.
+In the last run 90 additional threads barely make a difference, and 100 threads are nearly identical to 10 threads. 
