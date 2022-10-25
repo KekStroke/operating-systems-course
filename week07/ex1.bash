@@ -1,0 +1,1 @@
+size /bin/pwd > ex1.txt
