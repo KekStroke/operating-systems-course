@@ -1,0 +1,142 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  pwd
+    4  ls
+    5  mkdir ca_labs
+    6  cd ca_labs/
+    7  touch Anvar\nNikita\nAlbert\nDavid\nRoman > namelist
+    8  cat namelist
+    9  ls
+   10  touch namelist
+   11  vim namelist 
+   12  sort -r namelist > namelist.sorted
+   13  cat namelist.sorted
+   14  rm AnvarnNikitanAlbertnDavidnRoman 
+   15  ls
+   16  cat namelist.sorted
+   17  cat namelist
+   18  hostname
+   19  whoami
+   20  man -h
+   21  man -h head
+   22  ls
+   23  mkdir lab1
+   24  mv namelist lab1
+   25  mv namelist.sorted lab1
+   26  ls
+   27  cd lab1/
+   28  ls > list.txt
+   29  cat list.txt
+   30  ls > file.txt
+   31  head -n 3 < file.txt 
+   32  cat file.txt
+   33  head -n 3 < file.txt 
+   34  grep driver /proc
+   35  grep driver /proc > output.txt 2> errors.txt
+   36  head -n 3 < output.txt
+   37  head -n 3 < errors.txt
+   38  ls /proc | grep driver
+   39  ls /proc
+   40  ls /proc | grep driver
+   41  ls /proc | grep driver > output.txt 2> errors.txt
+   42  head -n 3 < errors.txt
+   43  head -n 3 < output.txt
+   44  ls /proc | grep 'driver'
+   45  ls /proc | grep 'driver' > output.txt 2> errors.txt
+   46  head -n 3 < output.txt
+   47  head -n 3 < errors.txt
+   48  find man
+   49  man find
+   50  find /proc "drive" > output.txt 2> errors.txt
+   51  head -n 3 < output.txt
+   52  head -n 3 < errors.txt
+   53  find /proc "driver" > output.txt 2> errors.txt
+   54  head -n 3 < output.txt
+   55  find /proc "driver" > output.txt 2> errors.txt
+   56  head -n 3 < output.txt
+   57  head -n 3 < errors.txt
+   58  find /proc -name "driver" > output.txt 2> errors.txt
+   59  head -n 3 < output.txt
+   60  head -n 3 < errors.txt
+   61  ls -R /proc | grep 'driver' > output.txt 2> errors.txt
+   62  head -n 3 < errors.txt
+   63  head -n 3 < output.txt
+   64  ls -R /proc 2> errors.txt | grep 'driver' > output.txt
+   65  head -n 3 < errors.txt
+   66  head -n 3 < output.txt
+   67  head -n 10 < output.txt
+   68  gedit output.txt 
+   69  code
+   70  code .
+   71  exit
+   72  cd ~
+   73  ls
+   74  mkdir ~/week01
+   75  cd week01/
+   76  ls /usr/bin
+   77  ls -r /usr/bin | grep "gcc"
+   78  ls -r /usr/bin | grep gcc
+   79  ls /usr/bin | grep gcc
+   80  find /usr/bin -name "gcc"
+   81  find /usr/bin -name "*gcc*"
+   82  sudo apt install gcc
+   83  find /usr/bin -name "*gcc*"
+   84  find -r /usr/bin -name "*gcc*"
+   85  find /usr/bin -name "*gcc*" | tail -n 5
+   86  find /usr/bin -name "*gcc*" | tail -n 5 | sort -r
+   87* find /usr/bin -name "*gcc*" | tail -n 5 | sort 
+   88  vim ex1.txt 
+   89  nano ex1.sh
+   90  ls
+   91  cls
+   92  clear
+   93  ls
+   94  ex1.hs
+   95  ex1.sh
+   96  bash ex1.sh
+   97  cd ..
+   98  mv week01/ex1.sh ~
+   99  ls
+  100  rmdir week01/
+  101  rmdir -rf week01/
+  102  rm -rf week01/
+  103  ex1.sh
+  104  bash ex1.sh
+  105  nano ex1.sh
+  106  rm -rf week01/
+  107  nano ex1.sh
+  108  bash ex1.sh
+  109  cd week01/
+  110  ls
+  111  cat ex1.txt 
+  112  nano ex1.txt 
+  113  cd ..
+  114  nano ex1.sh 
+  115  rm -rf week01/
+  116  bash ex1.sh
+  117  cat week01/ex1.txt 
+  118  mv ex1.sh 
+  119  mv ex1.sh week01/
+  120  ls
+  121  ls week01/
+  122  man history
+  123  cd week01/
+  124  nano ex2.sh
+  125  ex2.sh
+  126  bash ex2.sh
+  127  ls
+  128  cat ex2.txt
+  129  nanot ex2.txt
+  130  nano ex2.txt
+  131  history
+  132  history > ex2.txt
+  133  cat ex2.txt 
+  134  nano ex2.sh
+  135  bash ex2.sh
+  136  cat ex2.txt 
+  137  nano ex2.txt
+  138  nano ex2.sh
+  139  bash ex2.sh 
+  140  nano ex2.sh
+  141  history > ex2.txt
+  142  history > ~/week01/ex2.txt
