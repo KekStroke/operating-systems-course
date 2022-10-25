@@ -1,2 +1,0 @@
-ex2.c implements the algorithm for short job next process scheduling. The algorithm selects and runs the process that has arrived but hasn't yet been performed at each moment and has the shortest execution time. 
-The first come, first served strategy executes processes in the order they arrive, whereas the shortest job next method prioritizes processes that are available and have shorter execution times. 

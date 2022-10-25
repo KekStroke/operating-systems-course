@@ -1,2 +1,0 @@
-   text	   data	    bss	    dec	    hex	filename
-  23171	   1312	    296	  24779	   60cb	/bin/pwd
