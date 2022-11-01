@@ -1,0 +1,7 @@
+A machine has 16-bit virtual addresses. Pages are 8 KB. How
+many entries are needed for a single-level linear page table?
+
+8 KB is 8192 bytes.
+log_2 of 8192 = 13. Thus we need only 13 bits.
+16-13 = 3 bits has left.
+Thus, we are left with 2^3=8 entries in the table

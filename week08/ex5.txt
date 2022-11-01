@@ -1,0 +1,9 @@
+Difference between a physical and a virtual address.
+
+Physical address is precise location of data in a hardware device's memory.
+
+Virtual address maps all physcial addresses together even if they are on stored on different devices.
+It is used as an abstraction for CPU and programmers so that they would not be conserned on where exactly put what data.
+Thus, virtual address serves as a reference to some real memory.
+
+While the application is running, the CPU generates virtual addresses that are mapped to physical addresses by MMU.
