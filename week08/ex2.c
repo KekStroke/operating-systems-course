@@ -28,7 +28,6 @@ int main()
         int *ptr = malloc(MB * 10);
         memset(ptr, 0, MB * 10);
         sleep(1);
-        free(ptr);
     }
     return 0;
 }
