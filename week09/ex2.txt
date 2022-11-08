@@ -1,11 +1,11 @@
-In this exercise, the page counter is 32 bits, and the page table is 50 bytes in size.
+In this exercise, the page counter is 4 bits, and the page table is 100 bytes in size.
+
+Sequence with the lowest possible hit/miss ratio:
+1. So that a page appears as soon as it is swept from the page table, let's construct the sequence in the way that it goes from 1 to 6 again and again: 1 2 3 4 5 6 1 2 3 4 5 6 1 2 3 4 5 6 ...
+2. he sequence never hit since page 1 was flushed on the previous iteration and the page table only contains pages 2 to 5 when page 1 occurs for second time.
+Thus, it will give us 0 hit rate.
 
 Sequence with the highest possible hit/miss ratio:
 1. A page can appear in a sequence immediately before it is swept from the page table.
 2. The length of the page table and the quantity of bits inside the page counters would affect how this sequence would look.
-Thus, we can create the sequence that goes from 1 to 33 and then repeats from 1 to 33.
-
-Sequence with the lowest possible hit/miss ratio:
-1. So that a page appears as soon as it is swept from the page table, let's construct the sequence in the way that it goes from 1 to 34 again and again. 
-2. he sequence never hit since page 1 was flushed on the previous iteration and the page table only contains pages 2 to 33 when page 1 occurs for second time.
-Thus, it will give us 0 hit rate.
+Thus, we can create the sequence that goes from 1 to 5 and then repeats from 1 to 5: 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 ...
